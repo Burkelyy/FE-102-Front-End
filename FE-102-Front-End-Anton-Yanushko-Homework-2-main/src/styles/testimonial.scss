@@ -1,0 +1,131 @@
+@import '_cdn.scss';
+
+@import '_mixins.scss';
+
+@import '_variables.scss';
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    .swiper-slide {
+        display: flex;
+        background: #5C3249;
+        margin-bottom: 42px;
+
+        .slide-imgage {
+            width: 50%;
+
+            .slide-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .slide-text {
+            width: 50%;
+            padding: 116px 170px 116px 129px;
+            align-self: center;
+            text-transform: capitalize;
+
+            .text__coment {
+                @include fontCardo(400, $_36px, 49px);
+                color: $white;
+                padding-bottom: 25px
+            }
+
+            .text__author {
+                @include fontRaleway(700, $_13px, 15px);
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+    }
+
+    .swiper-slide:nth-child(odd) {
+        background: blue;
+    }
+
+    .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        border: 1px solid #7E5D6F;
+        background: $white;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #7E5D6F;
+        border: 1px solid #7E5D6F;
+    }
+
+    .swiper-pagination-horizontal {
+        gap: 25px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .swiper {
+        .swiper-slide {
+            .slide-text {
+                padding: 47px 104px 110px 88px;
+                align-self: center;
+
+                .text__coment {
+                    @include fontCardo(400, $_24px, 32px);
+                    padding-bottom: 15px
+                }
+
+                .text__author {
+                    @include fontRaleway(700, $_12px, 14px);
+                }
+            }
+        }
+
+        .swiper-pagination-bullet {
+            width: 9.5px;
+            height: 9.5px;
+        }
+    }
+}
+
+@media(max-width: 320px) {
+    .swiper {
+        .swiper-slide {
+            flex-direction: column;
+
+            .slide-imgage {
+                width: 100%;
+                object-fit: cover;
+
+                .slide-img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .slide-text {
+                width: 100%;
+                padding: 0 25px 95px 20px;
+                align-self: center;
+                text-align: center;
+
+                .text__coment {
+                    @include fontCardo(400, $_24px, 32px);
+                    padding-bottom: 15px
+                }
+
+                .text__author {
+                    @include fontRaleway(700, $_12px, 14px);
+                }
+            }
+        }
+
+        .swiper-pagination-bullet {
+            width: 9.5px;
+            height: 9.5px;
+        }
+    }
+}

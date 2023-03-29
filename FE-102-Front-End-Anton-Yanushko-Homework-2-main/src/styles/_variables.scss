@@ -1,0 +1,61 @@
+// colors
+
+$white: #FFFFFF;
+$dark-purple: #656980;
+$gray: #6C7279;
+$deep-grey: #808080;
+$light-grey: #BABBC5;
+$light-black: #2D3033;
+$red: #FF4343;
+$deep-red: #E71414;
+$black: #000000;
+$silver: #C6CBCD;
+$blue: #353C65;
+$deep-blue: #2C3154;
+
+//font-size
+
+$_12px: 0.75rem;
+$_13px: 0.8125rem;
+$_14px: 0.875rem;
+$_16px: 1rem;
+$_18px: 1.125rem;
+$_21px: 1.3125rem;
+$_24px: 1.5rem;
+$_30px: 1.875rem;
+$_36px: 2.25rem;
+$_48px: 3rem;
+$_64px: 4rem;
+
+//border
+
+$border-bottom_hover: 2px solid $light-grey;
+$border-bottom_active: 2px solid $deep-red;
+$border-img: 2px solid #FFFFFF;
+$border-fa: 1px solid #C6CBCD;
+
+//templates
+
+%fa-links {
+    border: $border-fa;
+    width: 39px;
+    height: 39px;
+    padding: 10px 10px;
+    color: $silver;
+}
+
+%fa-links-tablet {
+    border: $border-fa;
+    width: 33px;
+    height: 33px;
+    padding: 9px 9px;
+    color: $silver;
+}
+
+%fa-links-mobil {
+    border: $border-fa;
+    width: 39.61px;
+    height: 39.61px;
+    padding: 10px 10px;
+    color: $silver;
+}

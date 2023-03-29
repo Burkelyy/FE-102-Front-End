@@ -1,0 +1,189 @@
+@import '_cdn.scss';
+
+@import '_mixins.scss';
+
+@import '_variables.scss';
+
+.social {
+    background-color: $blue;
+
+    &-wrap {
+        max-width: 1170px;
+        padding: 0 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        padding-top: 71px;
+        color: $white;
+    }
+
+    &-location {
+        width: 370px;
+        text-align: center;
+        margin-bottom: 109px;
+
+        .location__title {
+            @include fontRaleway(700, $_18px, 21px);
+            text-transform: uppercase;
+            margin-bottom: 29px;
+        }
+
+        .location__subtitle {
+            @include fontRaleway(400, $_18px, 21px);
+        }
+    }
+
+    &-links {
+        width: 370px;
+        text-align: center;
+
+        .links__title {
+            margin-bottom: 49px;
+            @include fontRaleway(700, $_18px, 21px);
+            text-transform: uppercase;
+        }
+
+        .links__icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .fa-brands {
+            @extend %fa-links;
+        }
+    }
+
+    &-about {
+        width: 370px;
+        text-align: center;
+
+        .about__title {
+            margin-bottom: 29px;
+            @include fontRaleway(700, $_18px, 21px);
+            text-transform: uppercase;
+        }
+
+        .about__text {
+            @include fontRaleway(400, $_18px, 21px);
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .social {
+        &-wrap {
+            gap: 20px;
+            padding-top: 47px;
+        }
+
+        &-location {
+            width: 315px;
+            margin-bottom: 73px;
+
+            .location__title {
+                @include fontRaleway(700, $_14px, 16px);
+                margin-bottom: 29px;
+            }
+
+            .location__subtitle {
+                @include fontRaleway(400, $_14px, 16px);
+            }
+        }
+
+        &-links {
+            width: 314px;
+            text-align: center;
+
+            .links__title {
+                margin-bottom: 32.5px;
+                @include fontRaleway(700, $_14px, 16px);
+            }
+
+            .links__icons {
+                display: flex;
+                justify-content: center;
+                gap: 22px;
+            }
+
+            .fa-brands {
+                @extend %fa-links;
+            }
+        }
+
+        &-about {
+            width: 315px;
+            text-align: center;
+
+            .about__title {
+                margin-bottom: 15.5px;
+                @include fontRaleway(700, $_14px, 16px);
+            }
+
+            .about__text {
+                @include fontRaleway(400, $_14px, 16px);
+            }
+        }
+    }
+}
+
+@media(max-width: 320px) {
+    .social {
+        &-wrap {
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 34px;
+            padding-bottom: 33px;
+        }
+
+        &-location {
+            width: 280px;
+            margin-bottom: 69px;
+
+            .location__title {
+                @include fontRaleway(700, $_14px, 16px);
+                margin-bottom: 29px;
+            }
+
+            .location__subtitle {
+                @include fontRaleway(400, $_14px, 16px);
+            }
+        }
+
+        &-links {
+            width: 280px;
+            text-align: center;
+            margin-bottom: 59px;
+
+            .links__title {
+                margin-bottom: 32.5px;
+                @include fontRaleway(700, $_14px, 16px);
+            }
+
+            .links__icons {
+                display: flex;
+                justify-content: center;
+                gap: 22px;
+            }
+
+            // .fa-brands {
+            //     @extend %fa-links;
+            // }
+        }
+
+        &-about {
+            width: 280px;
+            text-align: center;
+
+            .about__title {
+                margin-bottom: 15.5px;
+                @include fontRaleway(700, $_14px, 16px);
+            }
+
+            .about__text {
+                @include fontRaleway(400, $_14px, 16px);
+            }
+        }
+    }
+}

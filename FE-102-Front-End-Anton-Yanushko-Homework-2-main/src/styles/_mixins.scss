@@ -1,0 +1,13 @@
+@mixin fontRaleway($fw, $fz, $lh) {
+    font-family: 'Raleway';
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+}
+
+@mixin fontCardo($fw, $fz, $lh){
+    font-family: 'Cardo';
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+}
